@@ -18,14 +18,14 @@ export class Mailer{
         try {
             await this.transporter.sendMail({
                 from: `"Cut and Grow" <${credentials.user}>`,
-                to: `${credentials.user}`,
+                to: `cut.and.grow.co@gmail.com`,
                 subject: "New Client!",
                 text: mailText
             });
 
             console.log("Email was sent!");
         } 
-        
+
         catch (e) {
             console.log(e)
         }
