@@ -11,7 +11,6 @@ app.post('/api/client/data', async (req, res) => {
     const mailer = new Mailer();
 
     mailer.sendNotification(mailText);
-
     res.send();
 })
 
